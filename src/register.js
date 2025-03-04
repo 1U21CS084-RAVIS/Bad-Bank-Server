@@ -16,7 +16,7 @@ export default function Register() {
         // console.log(name, email, pass);
         // users.users.push(
         let item = { name: Name, email: Email, password: pass, amount: 1000 };
-        axios.post('http://localhost:8080/create',item)
+        axios.post('https://bad-bank-client-1.onrender.com/create',item)
         alert("Submitted Sucessfully");
     }
 
