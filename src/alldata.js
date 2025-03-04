@@ -8,7 +8,7 @@ export default function Alldata() {
   let [formData, setFormData] = useState({ name: "", email: "", password: "", amount: "" });
  useEffect(()=>{
   async function asyndata(e) {
-    let result = await axios.get("http://localhost:8080/data");
+    let result = await axios.get("https://bad-bank-client-1.onrender.com/data");
     setData(result.data);
     alert("Fetched");  
   }
@@ -17,7 +17,7 @@ export default function Alldata() {
 
   async function handleDelete(id) {
     try {
-      await axios.delete(`http://localhost:8080/delete/${id}`);
+      await axios.delete(`https://bad-bank-client-1.onrender.com/delete/${id}`);
       setData(data.filter((item) => item._id !== id));
     } catch (error) {
       console.error("Error deleting:", error);
@@ -31,7 +31,7 @@ export default function Alldata() {
 
   async function handleUpdate() {
     try {
-      await axios.put(`http://localhost:8080/update/${editId}`, formData);
+      await axios.put(`https://bad-bank-client-1.onrender.com/update/${editId}`, formData);
       setData(data.map((item) => (item._id === editId ? { ...item, ...formData } : item)));
       setEditId(null);
       alert("Updated successfully!");
