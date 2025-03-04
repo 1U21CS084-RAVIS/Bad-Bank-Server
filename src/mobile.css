@@ -107,4 +107,34 @@ body {
       font-size: 12px;
     }
   }
+  /* Ensures Navbar is responsive on smaller screens */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    border-color: #fff;
+  }
   
+  .navbar-nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .nav-link {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .brand {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Optional: Reduce padding and font size for very small screens (e.g., phones) */
+@media (max-width: 480px) {
+  .navbar-nav .nav-link {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
