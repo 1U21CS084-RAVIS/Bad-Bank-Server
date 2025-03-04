@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar for Mobile */
+  .navbar {
+    padding: 10px 0;
+  }
+  
+  .navbar .navbar-nav {
+    justify-content: flex-end;
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    /* Navbar collapses on smaller screens */
+    .navbar-toggler {
+      border-color: #fff;
+    }
+  
+    .navbar-collapse {
+      background-color: #343a40;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-link {
+      margin: 10px 0;
+    }
+  
+    /* Navbar Brand */
+    .brand {
+      font-size: 24px;
+      margin-right: 0;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  /* Home Page Styles */
+  .homepage-container {
+    padding: 20px 0;
+  }
+  
+  /* Carousel Adjustments */
+  .creative-carousel {
+    max-height: 500px;
+  }
+  
+  .creative-carousel .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* On Mobile Devices */
+  @media (max-width: 768px) {
+    .creative-carousel {
+      max-height: 300px;
+    }
+  
+    .carousel-caption-custom {
+      bottom: 15px;
+    }
+  
+    .caption-title {
+      font-size: 20px;
+    }
+  
+    .caption-text {
+      font-size: 14px;
+    }
+  
+    .home-content {
+      padding: 10px;
+    }
+  }
+  
+  /* For Very Small Screens (Phones) */
+  @media (max-width: 480px) {
+    .navbar .nav-link {
+      font-size: 14px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .carousel-caption-custom {
+      padding: 10px;
+    }
+  
+    .caption-title {
+      font-size: 18px;
+    }
+  
+    .caption-text {
+      font-size: 12px;
+    }
+  }
+  
